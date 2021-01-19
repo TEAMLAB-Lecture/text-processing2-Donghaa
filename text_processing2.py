@@ -90,10 +90,10 @@ def to_camel_case(underscore_str):
             "alreadyCamel"
     """
     tmp_arr = ' '.join(underscore_str.split('_')).split()
-    if not tmp_arr:
+    if '_' not in underscore_str:
+        camelcase_str = underscore_str
+    elif not tmp_arr:
         camelcase_str = ''
-    elif len(tmp_arr) == 1:
-        camelcase_str = ''.join(tmp_arr)
     else:
         tmp_arr[0] = tmp_arr[0].lower()
         for i in range(1,len(tmp_arr)):
