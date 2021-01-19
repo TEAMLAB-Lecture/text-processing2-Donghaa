@@ -54,7 +54,7 @@ def digits_to_words(input_string):
             digit_string.append('nine')
             
 
-    return digit_string.split()
+    return ' '.join(digit_string)
 
 
 """
