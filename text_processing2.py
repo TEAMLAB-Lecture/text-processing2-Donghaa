@@ -94,6 +94,6 @@ def to_camel_case(underscore_str):
     tmp_arr2 = [tmp_arr[0]]
     for i in range(1,len(tmp_arr)):
         tmp_arr2.append(tmp_arr[i].capitalize())
-    camelcase_str = ' '.join(tmp_arr)
+    camelcase_str = ''.join(tmp_arr2)
 
     return camelcase_str
